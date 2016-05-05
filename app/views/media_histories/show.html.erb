@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Media:</strong>
+  <%= @media_history.media_id %>
+</p>
+
+<p>
+  <strong>Track source:</strong>
+  <%= @media_history.track_source %>
+</p>
+
+<p>
+  <strong>Album:</strong>
+  <%= @media_history.album %>
+</p>
+
+<p>
+  <strong>Artist:</strong>
+  <%= @media_history.artist %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @media_history.duration %>
+</p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @media_history.genre %>
+</p>
+
+<p>
+  <strong>Album art uri:</strong>
+  <%= @media_history.album_art_uri %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @media_history.title %>
+</p>
+
+<p>
+  <strong>Track number:</strong>
+  <%= @media_history.track_number %>
+</p>
+
+<p>
+  <strong>Num tracks:</strong>
+  <%= @media_history.num_tracks %>
+</p>
+
+<p>
+  <strong>Recorded at:</strong>
+  <%= @media_history.recorded_at %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @media_history.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @media_history.longitude %>
+</p>
+
+<p>
+  <strong>Accuracy:</strong>
+  <%= @media_history.accuracy %>
+</p>
+
+<p>
+  <strong>Altitude:</strong>
+  <%= @media_history.altitude %>
+</p>
+
+<%= link_to 'Edit', edit_media_history_path(@media_history) %> |
+<%= link_to 'Back', media_histories_path %>

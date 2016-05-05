@@ -1,0 +1,92 @@
+<%= form_for(media_history) do |f| %>
+  <% if media_history.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(media_history.errors.count, "error") %> prohibited this media_history from being saved:</h2>
+
+      <ul>
+      <% media_history.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :media_id %>
+    <%= f.text_area :media_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :track_source %>
+    <%= f.text_area :track_source %>
+  </div>
+
+  <div class="field">
+    <%= f.label :album %>
+    <%= f.text_area :album %>
+  </div>
+
+  <div class="field">
+    <%= f.label :artist %>
+    <%= f.text_area :artist %>
+  </div>
+
+  <div class="field">
+    <%= f.label :duration %>
+    <%= f.number_field :duration %>
+  </div>
+
+  <div class="field">
+    <%= f.label :genre %>
+    <%= f.text_area :genre %>
+  </div>
+
+  <div class="field">
+    <%= f.label :album_art_uri %>
+    <%= f.text_area :album_art_uri %>
+  </div>
+
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_area :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :track_number %>
+    <%= f.number_field :track_number %>
+  </div>
+
+  <div class="field">
+    <%= f.label :num_tracks %>
+    <%= f.number_field :num_tracks %>
+  </div>
+
+  <div class="field">
+    <%= f.label :recorded_at %>
+    <%= f.date_select :recorded_at %>
+  </div>
+
+  <div class="field">
+    <%= f.label :latitude %>
+    <%= f.text_field :latitude %>
+  </div>
+
+  <div class="field">
+    <%= f.label :longitude %>
+    <%= f.text_field :longitude %>
+  </div>
+
+  <div class="field">
+    <%= f.label :accuracy %>
+    <%= f.text_field :accuracy %>
+  </div>
+
+  <div class="field">
+    <%= f.label :altitude %>
+    <%= f.text_field :altitude %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

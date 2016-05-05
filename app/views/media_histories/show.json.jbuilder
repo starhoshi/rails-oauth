@@ -1,0 +1,1 @@
+json.extract! @media_history, :id, :media_id, :track_source, :album, :artist, :duration, :genre, :album_art_uri, :title, :track_number, :num_tracks, :recorded_at, :latitude, :longitude, :accuracy, :altitude, :created_at, :updated_at
